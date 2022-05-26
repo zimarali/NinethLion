@@ -10,7 +10,7 @@ function Weather() {
     const fetchWeather = () => {
         console.log("GRABBING WEATHER INFO - STARTED");
         axios
-          .get("http://api.weatherapi.com/v1/current.json", { params })
+          .get("https://api.weatherapi.com/v1/current.json", { params })
           .then((res) => {
             console.log(res);
             setWeather({
